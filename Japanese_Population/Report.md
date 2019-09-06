@@ -29,7 +29,7 @@ The objective of this project was the development of a PBPK population model for
 
 First, a systemic literature search was carried out to collect relevant anatomical and physiological study data required for developing of a Japanese PBPK database. Literature data were analyzed if they met specific inclusion criteria. For each parameter, a batch of mathematical functions was subsequently fitted to the data. In a final step, the best performing functions were selected and implemented in a PBPK database for Japanese. Figure 4‑1 schematically illustrates this workflow.
 
-![1565705246059](images/workflow.png)
+![1565705246059](Images/Workflow.png)
 
 **Figure** **4****‑****1** Workflow of this study**.** 
 
