@@ -1,37 +1,30 @@
 # 1. Executive Summary
 
-A knowledge-driven PBPK population for Japanese was successfully developed. Anatomical and physiological maturation from birth to 30 years of life were informed based on literature information and subsequently integrated into a whole-body PBPK approach. 
+Anatomical and physiological maturation from birth to 30 years of life were informed based on literature information and subsequently integrated into a whole-body PBPK approach. Thereby, a knowledge-driven PBPK population database for Japanese was successfully developed. This methodology enables an age-dependent description of concentration-time profiles from birth to 30 years of age.
 
-Besides comprehensive information on most parameters, no studies matching the inclusion criteria were retrieved for muscle, skin and the gastrointestinal organs. In contrast to studies on change in organ volume during the aging process, studies on blood-flow rates and CO distribution were sparse or used questionable analytical methods. Here, knowledge from Europeans was derived to inform the PBPK database. In addition, model-specific parameters such as vascular, interstitial or cellular organ fractions were assumed to be equal between Europeans and Japanese. 
-
-In this study, parameters relevant to a PBPK approach were gathered by a comprehensive review of the literature, and they were integrated into a knowledge-driven PBPK approach for Japanese that captures whole-body physiology. This methodology enables an age-dependent description of concentration-time profiles from birth to 30 years of age.
+Comprehensive data was retrieved for most model parameters which allowed to inform the physiological and anatomical maturation from birth to early adulthood. No studies matching the inclusion criteria were retrieved for muscle, skin and the gastrointestinal organs. In contrast to studies on change in organ volume during the aging process, studies on blood-flow rates and cardiac output distribution were sparse or used questionable analytical methods. Here, knowledge from Europeans was derived to inform the PBPK population database. In addition, model-specific parameters such as vascular, interstitial or cellular organ fractions were assumed to be equal between Europeans and Japanese. 
 
 
 
 # 2. Introduction
 
-Ethnic-related physiological differences are known and many of these can significantly affect drug pharmacokinetics (PK). Lower plasma volume, for example, can result in higher volume of distribution of hydrophilic drugs. The lower glomerular filtration rate (GFR) can increase the clearance of renally eliminated drugs, and with lower in albumin and α1-acidic glycoprotein (AAG) plasma concentrations, the fraction unbound (fu) of a drug can be higher than in caucausians than in Japanese, which may have critical implications for highly protein-bound drugs, especially if the drug has a narrow therapeutic range. Consequently, dose adjustments can be indicated for Japanese populations for a variety of drugs. 
+Ethnic-related physiological differences are known and many of them can significantly affect drug pharmacokinetics (PK). Consequently, dose adjustments can be indicated for certain populations for a variety of drugs. 
 
 One approach that may contribute to close this knowledge gap is physiologically-based pharmacokinetic (PBPK) modeling. PBPK models rely on *a priori* knowledge on physiological processes and integrate them within a mechanistic framework, which allows the prediction of absorption, distribution, metabolism, and excretion (ADME) properties of a drug ([Kuepfer et al., 2016](# 6. References)). Such models have proven to be a useful tool for predicting drug PK in various special populations, in particular preterm neonates ([Claassen et al., 2015](# 6. References)), children ([Maharaj et al., 2013](# 6. References)), elderly ([Schlender et al., 2016](# 6. References)), renally or hepatically impaired patients ([Edginton and Willmann, 2008](# 6. References)). Integral to these models is the vast amount of anatomical and physiological data underlying the model structure. 
 
-The objective of this analysis was to provide a Japanese PBPK database based on literature information that accounts for changes in anatomical and physiological parameters from newborn children to adults. 
-
-
-## 2.1 Goal and Objectives
-
-The objective of this project was the development of a PBPK population model for Japanese individuals that considers typical anatomical and physiological conditions. Therefore, the literature was reviewed with a focus on physiological characteristics in Japanese subjects from birth to adulthood. The goal of this part was to bridge an existing PBPK approach for Europeans based on the International Commission on Radiological Protection (ICRP) report ([Valentin, 2002](# 6. References)) to the Japanese population to encompass the full course of healthy maturation in this population.
+This analysis provides a Japanese PBPK population database based on literature information that accounts for changes in anatomical and physiological parameters from newborn children to adults. Therefore, the literature was reviewed with a focus on physiological characteristics in Japanese subjects from birth to adulthood. The goal of this part was to bridge an existing PBPK approach for Europeans based on the International Commission on Radiological Protection (ICRP) report ([Valentin, 2002](# 6. References)) to the Japanese population to encompass the full course of healthy maturation in this population.
 
 
 
 # 3. Modeling strategy and workflow
 
-## 3.1  Japanese PBPK database development 
+## 3.1  Japanese PBPK population database development 
 
-First, a systemic literature search was carried out to collect relevant anatomical and physiological study data required for developing of a Japanese PBPK database. Literature data were analyzed if they met specific inclusion criteria. For each parameter, a batch of mathematical functions was subsequently fitted to the data. In a final step, the best performing functions were selected and implemented in a PBPK database for Japanese. Figure 4‑1 schematically illustrates this workflow.
+First, a systemic literature search was carried out to collect relevant anatomical and physiological study data required for developing of a Japanese PBPK population database. Literature data were analyzed if they met specific inclusion criteria. For each parameter, a batch of mathematical functions was subsequently fitted to the data. In a final step, the best performing functions were selected and implemented in a PBPK poplation database for Japanese. **Figure 3‑1** schematically illustrates this workflow.
 
 ![1565705246059](Images/Workflow.png)
 
-**Figure** **4****‑****1** Workflow of this study**.** 
+**Figure** **3‑1** Workflow of this study**.** 
 
 
 
@@ -45,18 +38,13 @@ Studies identified in the literature search were included in a preliminary study
 
 ### 3.2.2 Data extraction
 
-Data extracted from the final study set were compiled in a Microsoft Excel 2010® spreadsheet and prepared for further analyses. An in-house developed tool of Bayer AG was used to extract data from plots and convert these into numerical values. For the sake of simplicity, the density of all organs was assumed to be 1 kg/dm³, unless weight and volume deviated from each other by more than 5%. In case the exact number of studied individuals was not reported it was arbitrarily set to one. 
+Data extracted from the included study set were compiled in a Microsoft Excel 2010® spreadsheet and prepared for further analyses. An in-house developed tool of Bayer AG was used to extract data from plots and convert these into numerical values. For the sake of simplicity, the density of all organs was assumed to be 1 kg/dm³, unless weight and volume deviated from each other by more than 5%. In case the exact number of studied individuals was not reported it was arbitrarily set to one. 
 
-In most cases values were reported as a geometric mean (![1565705170677](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565705170677.png)). In cases where the reported study mean and standard deviation define a lognormal distribution, the associated geometric mean value ![1565705195711](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565705195711.png) was calculated to obtain comparable parameters, as follows:
+In most cases values were reported as a geometric mean ($\bar{x}$) and geometric standard deviation (*SD*). In cases where the *µ* and *σ* define a lognormal distribution, the associated geometric mean value ($e^{\mu}$) and geometric standard deviation ($e^{\sigma}$) of the lognormal distribution were used as comparable parameters.
 
-![1565706821711](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565706821711.png) 
+### 3.2.3 Included data
 
-
-
-### 3.2.3 Data
-
-All studies considered for the Japanese PBPK population model used to inform the changes in the respective organ are listed in **Table 1**. The general lack of perfusion data impeded the computation of a robust variability for each blood flow rate, so that a 5 % coefficient of variation was assumed as accepted for other approaches ([McNally et al., 2014](# 6. References)). In total, 15 studies were included to build the Japanese PBPK database. 
-
+All studies considered for the Japanese PBPK population model used to inform the changes in the respective organ are listed in **Table 1**. The general lack of perfusion data impeded the computation of a robust variability for each blood flow rate, so that a 5 % coefficient of variation was assumed as accepted for other approaches ([McNally et al., 2014](# 6. References)). In total, 15 studies were included to build the Japanese PBPK population database. 
 
 **Table** **1** Studies utilized for model building to determine changes in organ volume and specific organ blood flow development over the course of maturation in healthy Japanese
 
@@ -86,7 +74,7 @@ For those organs for which no literature data was obtained, information was deri
 
 - Muscle mass in Japanese was informed by considering the ratio of lean body mass to muscle mass indicated in the ICRP report ([Valentin, 2002](# 6. References)) and multiplying this with the reported lean body mass of Japanese.
 
-- No additional information was obtained for the gastrointestinal tract. Parametrization was taken from the Caucasian population ([Edginton et al., 2006](# 6. References)).
+- No additional information was obtained for the gastrointestinal tract. Parametrization was taken from the European population ([Edginton et al., 2006](# 6. References)).
 
 - No perfusion data was retrieved from the literature. Therefore, the ratio between organ blood flow rate and cardiac output for a certain age was taken from the ICRP report ([Valentin, 2002](# 6. References)) and applied to the cardiac output information obtained from the literature for the Japanese population. 
 
@@ -97,23 +85,19 @@ For those organs for which no literature data was obtained, information was deri
 
 ### 3.3.1 Regression analysis and diagnostics
 
-Using the software Origin®(version X, OriginLab Corporation, Northamption, USA, [www.originLab.com](http://www.originLab.com)), a set of one-dimensional mathematical functions which are built-in in Origin® was fitted to the data using postnatal age (PNA) as regressor. The fitting procedure can be found in the Origin® user guide. 
+Using the software Origin® (version X, OriginLab Corporation, Northamption, USA, [www.originLab.com](http://www.originLab.com)), a set of one-dimensional mathematical functions which are built-in in Origin® was fitted to the data using postnatal age (PNA) as regressor. The fitting procedure can be found in the Origin® user guide. 
 
 **Table** **2** Functions fitted to the data collected from the literature
 
-![1565704997359](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565704997359.png)
-
-*only part of the function has been used
+![1565704997359](Images/Table2.PNG)
 
 **Table 2** shows the variety of functions that were considered to account for the different trends observed among the data. Of note, for most organs, age-grouping was applied to better describe the data and being able to apply different functions. The cut-offs were selected after visual inspection. From these derived functions only part of the age-span where the function was applied was used, and purely served for data description, not for prediction.
 
 A separate fit was made for males and females. For each curve fit, a summary of parameters, statistics (reduced chi-square, residual sum of squares and Adj. R-Square) were created. 
 
-Figures depicting the raw data, regression analysis and corresponding summary statistics are added to Section 7.4.
+### 3.3.2 Generation of the whole-body PBPK population database for Japanese
 
-### 3.3.2 Development of an whole-body PBPK database for Japanese
-
-Maturation changes of physiological parameters were evaluated for each year of life from birth to 30 years of age. Data was obtained and handled as described in 4.2.3. Since literature data do not consider vascular and parts of the interstitial spaces for each organ and tissue, respective fractions were added. These fractions summarize the difference between an ICRP-reported organ volume without blood and an *in silico* organ volume in PK-Sim ([Edginton et al., 2006](# 6. References)). 
+Maturation changes of physiological parameters were evaluated for each year of life from birth to 30 years of age. Data was obtained and handled as described in 3.2.3. Since literature data do not consider vascular and parts of the interstitial spaces for each organ and tissue, respective fractions were added. These fractions summarize the difference between an ICRP-reported organ volume without blood and an *in silico* organ volume in PK-Sim ([Edginton et al., 2006](# 6. References)). 
 
 The processed organ masses were summed up and found to reach 91-95 % of the body weight; the gap accounts for smaller organs not captured in this model, for example the adrenal glands, thyroid, tongue and prostate. In order to reach the final body weights, muscle and fat mass was increased in proportion to this gap.
 
@@ -121,31 +105,31 @@ Age-related changes in organ blood flow rates were accounted for as changes in c
 
 # 4. Results
 
-## 4.1 Whole-body PBPK database for Japanese
+## 4.1 Whole-body PBPK population database for Japanese
 
 ### 4.1.1 Demographics
 
-Japanese adult individuals are on average slightly smaller and have approximately 15% to 20% smaller body weight than adult Caucasians. A comparison of growth charts for Caucasian children based on the CDC database ([Kuczmarski, 2000](# 6. References)) with data for Japanese children ([Ogiu et al., 1997](# 6. References)) revealed that the difference in body weight starts above an age of 14 to 15 years. Below this age, the differences in anthropometry between Caucasian and Japanese children are marginal. This is visualized in **Figure 5‑1**.
-
-![1565706718984](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565706718984.png)
-
-![1565706724867](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565706724867.png)
+Japanese adult individuals are on average slightly smaller and have approximately 15% to 20% smaller body weight than adult Europeans. A comparison of growth charts for Caucasian children based on the CDC database ([Kuczmarski, 2000](# 6. References)) with data for Japanese children ([Ogiu et al., 1997](# 6. References)) revealed that the difference in body weight starts above an age of 14 to 15 years. Below this age, the differences in anthropometry between Europeans and Japanese children are marginal. This is visualized in **Figure 5‑1**.
 
 
 
-**Figure** **5****‑****1** Comparison of growth charts between Caucasian and Japanese children. Boys are visualized in the upper panel, while girls are shown in the lower panel. The figures on the left side range from birth to the age of 3 years, while the right side shows the maturation from 2 to 20 years
+![1565706718984](Images/GrowthChart.png)
+
+![1565706724867](Images/GrowthChartFemale.png)
+
+**Figure** **5‑1** Comparison of growth charts between Caucasian and Japanese children. Boys are visualized in the upper panel, while girls are shown in the lower panel. The figures on the left side range from birth to the age of 3 years, while the right side shows the maturation from 2 to 20 years
 
 
 
-In males, accelerated growth of organs during the puberty was observed and nearly no fat mass gain during that time. In females, the percentage of mass decreases over 16 years, while it increases in Caucasian. The total body fat mass in females showed to be higher than in males. 
+In Japanese males, accelerated growth of organs during the puberty was observed and nearly no fat mass gain during that time. In females, the percentage of mass decreases over 16 years, while it increases in Europeans. The total body fat mass in females showed to be higher than in males in both populations. 
 
-The anatomical and physiological characteristics are opposed to mean Caucasian individuals of the same age in a graphical visualization in **Figure 5‑2**.
+The anatomical and physiological characteristics are opposed to mean European individuals of the same age in a graphical visualization in **Figure 5‑2**.
 
-![1565706742324](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565706742324.png)
+![img](Images/Jap_vs_Cauc_Male.png)
 
-![1565706749306](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565706749306.png)
+![img](Images/Jap_vs_Cauc_Female.png)
 
-**Figure** **5****‑****2** Comparison of body composition between Caucasian and Japanese subjects between birth and adulthood
+**Figure** **5‑2** Comparison of body composition between European and Japanese subjects between birth and adulthood in males (upper panel) and females (lower panel)
 
 
 
@@ -155,7 +139,7 @@ The overall body composition over the course of maturation for as implemented in
 
 **Table** **3** Anthropometric measures, organ and tissue weights including blood content as used in the Japanese PBPK model
 
-![1565704364538](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565704364538.png)
+![1565704364538](Images/Table3.PNG)
 
 ​		f:female, m:male
 
@@ -165,11 +149,11 @@ The overall body composition over the course of maturation for as implemented in
 
 **Table** **4** Cardiac index and organ blood flow rates used in the Japanese PBPK model
 
-![1565704456296](C:\Users\ERWID\AppData\Roaming\Typora\typora-user-images\1565704456296.png)
+![1565704456296](Images/Table4.PNG)
 
 ​		f:female, m:male
 
-​		a Splanchnic blood flow rate combines gastro-intestinal, pancreatic and splenic blood flow and 			describes the portal blood flow
+​		a Splanchnic blood flow rate combines gastro-intestinal, pancreatic and splenic blood flow and describes the portal blood flow
 
 
 
@@ -177,7 +161,7 @@ The overall body composition over the course of maturation for as implemented in
 
 A knowledge-driven PBPK population for Japanese was successfully developed. Anatomical and physiological maturation from birth to 30 years of life were informed based on literature information and subsequently integrated into a whole-body PBPK approach. 
 
-Besides comprehensive information on most parameters, no studies matching the inclusion criteria were retrieved for muscle, skin and the gastrointestinal organs. In contrast to studies on change in organ volume during the aging process, studies on blood-flow rates and CO distribution were sparse or used questionable analytical methods. Here, knowledge from Europeans was derived to inform the PBPK database. In addition, model-specific parameters such as vascular, interstitial or cellular organ fractions were assumed to be equal between Europeans and Japanese. 
+Besides comprehensive information on most parameters, no studies matching the inclusion criteria were retrieved for muscle, skin and the gastrointestinal organs. In contrast to studies on change in organ volume during the aging process, studies on blood-flow rates and cardiac output distribution were sparse or used questionable analytical methods. Here, knowledge from Europeans was derived to inform the PBPK population database. In addition, model-specific parameters such as vascular, interstitial or cellular organ fractions were assumed to be equal between Europeans and Japanese. 
 
 In this study, parameters relevant to a PBPK approach were gathered by a comprehensive review of the literature, and they were integrated into a knowledge-driven PBPK approach for Japanese that captures whole-body physiology. This methodology enables an age-dependent description of concentration-time profiles from birth to 30 years of age. 
 
