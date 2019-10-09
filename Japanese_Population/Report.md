@@ -167,7 +167,7 @@ In this study, parameters relevant to a PBPK approach were gathered by a compreh
 
 
 
-#6-references
+# 6. References
 
 Agency IAE 1998. Compilation of Anatomical, Physiological and Metabolic Characteristics for a Reference Asian Man Volume 2: Country Reports.
 
