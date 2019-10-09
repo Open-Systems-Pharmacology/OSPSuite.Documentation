@@ -1,4 +1,4 @@
-# 1. Executive Summary
+﻿# 1. Executive Summary
 
 Anatomical and physiological maturation from birth to 30 years of life were informed based on literature information and subsequently integrated into a whole-body PBPK approach. Thereby, a knowledge-driven PBPK population database for Japanese was successfully developed. This methodology enables an age-dependent description of concentration-time profiles from birth to 30 years of age.
 
@@ -10,9 +10,9 @@ Comprehensive data was retrieved for most model parameters which allowed to info
 
 Ethnic-related physiological differences are known and many of them can significantly affect drug pharmacokinetics (PK). Consequently, dose adjustments can be indicated for certain populations for a variety of drugs. 
 
-One approach that may contribute to close this knowledge gap is physiologically-based pharmacokinetic (PBPK) modeling. PBPK models rely on *a priori* knowledge on physiological processes and integrate them within a mechanistic framework, which allows the prediction of absorption, distribution, metabolism, and excretion (ADME) properties of a drug ([Kuepfer et al., 2016](# 6. References)). Such models have proven to be a useful tool for predicting drug PK in various special populations, in particular preterm neonates ([Claassen et al., 2015](# 6. References)), children ([Maharaj et al., 2013](# 6. References)), elderly ([Schlender et al., 2016](# 6. References)), renally or hepatically impaired patients ([Edginton and Willmann, 2008](# 6. References)). Integral to these models is the vast amount of anatomical and physiological data underlying the model structure. 
+One approach that may contribute to close this knowledge gap is physiologically-based pharmacokinetic (PBPK) modeling. PBPK models rely on *a priori* knowledge on physiological processes and integrate them within a mechanistic framework, which allows the prediction of absorption, distribution, metabolism, and excretion (ADME) properties of a drug ([Kuepfer et al., 2016](#6-references)). Such models have proven to be a useful tool for predicting drug PK in various special populations, in particular preterm neonates ([Claassen et al., 2015](#6-references)), children ([Maharaj et al., 2013](#6-references)), elderly ([Schlender et al., 2016](#6-references)), renally or hepatically impaired patients ([Edginton and Willmann, 2008](#6-references)). Integral to these models is the vast amount of anatomical and physiological data underlying the model structure. 
 
-This analysis provides a Japanese PBPK population database based on literature information that accounts for changes in anatomical and physiological parameters from newborn children to adults. Therefore, the literature was reviewed with a focus on physiological characteristics in Japanese subjects from birth to adulthood. The goal of this part was to bridge an existing PBPK approach for Europeans based on the International Commission on Radiological Protection (ICRP) report ([Valentin, 2002](# 6. References)) to the Japanese population to encompass the full course of healthy maturation in this population.
+This analysis provides a Japanese PBPK population database based on literature information that accounts for changes in anatomical and physiological parameters from newborn children to adults. Therefore, the literature was reviewed with a focus on physiological characteristics in Japanese subjects from birth to adulthood. The goal of this part was to bridge an existing PBPK approach for Europeans based on the International Commission on Radiological Protection (ICRP) report ([Valentin, 2002](#6-references)) to the Japanese population to encompass the full course of healthy maturation in this population.
 
 
 
@@ -34,7 +34,7 @@ First, a systemic literature search was carried out to collect relevant anatomic
 
 The literature was searched for each parameter with various key words using PubMed (http://www.ncbi.nlm.nih.gov/pubmed/), J-STAGE (https://www.jstage.jst.go.jp/browse) and Google Scholar (https://scholar.google.de/). Body weight and height or body mass index (anthropometric measures), as well as anatomical and (patho)physiological parameters, were searched using additional terms such as ‘Japanese’. Publications in Japanese language were not considered. Collected studies were scrutinized for possible additional references that were not covered by the literature search. 
 
-Studies identified in the literature search were included in a preliminary study set if they met the following inclusion criteria: (a) clear assignment of sex, (b) clear assignment of race, (c) a comprehensible statement regarding the method of analysis, and (d) ruling out of effects of medication or disease on subjects’ physiology. Studies that included longitudinal surveillance were preferred. Since *in vivo* measurements of organ size are not directly comparable to measurements obtained from autopsy reports, the former were taken into consideration only for the evaluation of muscle, fat, and blood flow ([Saisho et al., 2007](# 6. References)). Furthermore, for each study cohort the available details about body composition, for example fat mass, fat-free mass and lean-body mass, as well as total body water were extracted and used as covariates.
+Studies identified in the literature search were included in a preliminary study set if they met the following inclusion criteria: (a) clear assignment of sex, (b) clear assignment of race, (c) a comprehensible statement regarding the method of analysis, and (d) ruling out of effects of medication or disease on subjects’ physiology. Studies that included longitudinal surveillance were preferred. Since *in vivo* measurements of organ size are not directly comparable to measurements obtained from autopsy reports, the former were taken into consideration only for the evaluation of muscle, fat, and blood flow ([Saisho et al., 2007](#6-references)). Furthermore, for each study cohort the available details about body composition, for example fat mass, fat-free mass and lean-body mass, as well as total body water were extracted and used as covariates.
 
 ### 3.2.2 Data extraction
 
@@ -44,39 +44,39 @@ In most cases values were reported as a geometric mean ($\bar{x}$) and geometric
 
 ### 3.2.3 Included data
 
-All studies considered for the Japanese PBPK population model used to inform the changes in the respective organ are listed in **Table 1**. The general lack of perfusion data impeded the computation of a robust variability for each blood flow rate, so that a 5 % coefficient of variation was assumed as accepted for other approaches ([McNally et al., 2014](# 6. References)). In total, 15 studies were included to build the Japanese PBPK population database. 
+All studies considered for the Japanese PBPK population model used to inform the changes in the respective organ are listed in **Table 1**. The general lack of perfusion data impeded the computation of a robust variability for each blood flow rate, so that a 5 % coefficient of variation was assumed as accepted for other approaches ([McNally et al., 2014](#6-references)). In total, 15 studies were included to build the Japanese PBPK population database. 
 
 **Table** **1** Studies utilized for model building to determine changes in organ volume and specific organ blood flow development over the course of maturation in healthy Japanese
 
 | **Physiological measure** | **Reference**                                                |
 | ------------------------- | ------------------------------------------------------------ |
-| Antropometry              | ([Agency IAE 1998](# 6. References); [Eveleth et al., 1990](# 6. References); [Fujii et al., 2011](# 6. References); [Katoda, 1991](# 6. References); [Ogiu et al., 1997](# 6. References); [Sumiya et al., 2001](# 6. References); [Takaishi and KATO, 1999](# 6. References);   [Tanaka et al., 2004](# 6. References); [Tanner et al., 1982](# 6. References)) |
+| Antropometry              | ([Agency IAE 1998](#6-references); [Eveleth et al., 1990](#6-references); [Fujii et al., 2011](#6-references); [Katoda, 1991](#6-references); [Ogiu et al., 1997](#6-references); [Sumiya et al., 2001](#6-references); [Takaishi and KATO, 1999](#6-references);   [Tanaka et al., 2004](#6-references); [Tanner et al., 1982](#6-references)) |
 | Organ volumes             |                                                              |
-| Bone                      | ([Sakai et al., 2011](# 6. References); [Tanaka et al., 1998](# 6. References)) |
-| Brain                     | ([Agency IAE 1998](# 6. References); [Ogiu et al., 1997](# 6. References)) |
-| Fat                       | ([Fujii et al., 2011](# 6. References); [Komiya et al., 2004](# 6. References); [Nakao and Komiya, 2003](# 6. References); [Otoki et al., 1999](# 6. References); [Sakai et al., 2011](# 6. References); [Teramoto et al., 1999](# 6. References)) |
-| Gonads                    | ([Agency IAE 1998](# 6. References); [Tanaka et al., 1998](# 6. References)) |
-| Heart                     | ([Agency IAE 1998](# 6. References); [Ogiu et al., 1997](# 6. References)) |
-| Kidney                    | ([Agency IAE 1998](# 6. References); [Ogiu et al., 1997](# 6. References)) |
-| Liver                     | ([Agency IAE 1998](# 6. References); [Ogiu et al., 1997](# 6. References)) |
-| Lung                      | ([Agency IAE 1998](# 6. References); [Ogiu et al., 1997](# 6. References)) |
+| Bone                      | ([Sakai et al., 2011](#6-references); [Tanaka et al., 1998](#6-references)) |
+| Brain                     | ([Agency IAE 1998](#6-references); [Ogiu et al., 1997](#6-references)) |
+| Fat                       | ([Fujii et al., 2011](#6-references); [Komiya et al., 2004](#6-references); [Nakao and Komiya, 2003](#6-references); [Otoki et al., 1999](#6-references); [Sakai et al., 2011](#6-references); [Teramoto et al., 1999](#6-references)) |
+| Gonads                    | ([Agency IAE 1998](#6-references); [Tanaka et al., 1998](#6-references)) |
+| Heart                     | ([Agency IAE 1998](#6-references); [Ogiu et al., 1997](#6-references)) |
+| Kidney                    | ([Agency IAE 1998](#6-references); [Ogiu et al., 1997](#6-references)) |
+| Liver                     | ([Agency IAE 1998](#6-references); [Ogiu et al., 1997](#6-references)) |
+| Lung                      | ([Agency IAE 1998](#6-references); [Ogiu et al., 1997](#6-references)) |
 | Muscle                    | -                                                            |
-| Pancreas                  | ([Agency IAE 1998](# 6. References); [Ogiu et al., 1997](# 6. References)) |
+| Pancreas                  | ([Agency IAE 1998](#6-references); [Ogiu et al., 1997](#6-references)) |
 | Skin                      | -                                                            |
-| Spleen                    | ([Agency IAE 1998](# 6. References); [Ogiu et al., 1997](# 6. References)) |
-| Cardiac output            | ([Katori, 1979](# 6. References))                                  |
+| Spleen                    | ([Agency IAE 1998](#6-references); [Ogiu et al., 1997](#6-references)) |
+| Cardiac output            | ([Katori, 1979](#6-references))                                  |
 
 For those organs for which no literature data was obtained, information was derived from other sources. 
 
-- Maturation of the blood pools, arterial and venous blood as well as portal vein, were informed by considering the ratio of each pool to the total blood volume indicated in the ICRP report ([Valentin, 2002](# 6. References)) and by a subsequent application of this ratio to the reported blood volume for Japanese in the country report Japanese in the Reference Asian Man ([Tanaka et al., 1998](# 6. References))
+- Maturation of the blood pools, arterial and venous blood as well as portal vein, were informed by considering the ratio of each pool to the total blood volume indicated in the ICRP report ([Valentin, 2002](#6-references)) and by a subsequent application of this ratio to the reported blood volume for Japanese in the country report Japanese in the Reference Asian Man ([Tanaka et al., 1998](#6-references))
 
-- For the skin volume age-related changes of the body surface area (BSA) were calculated based on Mosteller ([Mosteller, 1987](# 6. References)) for a given body height and weight for each age. Then, again, the ratio of skin weight to BSA indicated in the ICRP report was multiplied to the computed BSA of Japanese.
+- For the skin volume age-related changes of the body surface area (BSA) were calculated based on Mosteller ([Mosteller, 1987](#6-references)) for a given body height and weight for each age. Then, again, the ratio of skin weight to BSA indicated in the ICRP report was multiplied to the computed BSA of Japanese.
 
-- Muscle mass in Japanese was informed by considering the ratio of lean body mass to muscle mass indicated in the ICRP report ([Valentin, 2002](# 6. References)) and multiplying this with the reported lean body mass of Japanese.
+- Muscle mass in Japanese was informed by considering the ratio of lean body mass to muscle mass indicated in the ICRP report ([Valentin, 2002](#6-references)) and multiplying this with the reported lean body mass of Japanese.
 
-- No additional information was obtained for the gastrointestinal tract. Parametrization was taken from the European population ([Edginton et al., 2006](# 6. References)).
+- No additional information was obtained for the gastrointestinal tract. Parametrization was taken from the European population ([Edginton et al., 2006](#6-references)).
 
-- No perfusion data was retrieved from the literature. Therefore, the ratio between organ blood flow rate and cardiac output for a certain age was taken from the ICRP report ([Valentin, 2002](# 6. References)) and applied to the cardiac output information obtained from the literature for the Japanese population. 
+- No perfusion data was retrieved from the literature. Therefore, the ratio between organ blood flow rate and cardiac output for a certain age was taken from the ICRP report ([Valentin, 2002](#6-references)) and applied to the cardiac output information obtained from the literature for the Japanese population. 
 
 
 
@@ -97,11 +97,11 @@ A separate fit was made for males and females. For each curve fit, a summary of 
 
 ### 3.3.2 Generation of the whole-body PBPK population database for Japanese
 
-Maturation changes of physiological parameters were evaluated for each year of life from birth to 30 years of age. Data was obtained and handled as described in 3.2.3. Since literature data do not consider vascular and parts of the interstitial spaces for each organ and tissue, respective fractions were added. These fractions summarize the difference between an ICRP-reported organ volume without blood and an *in silico* organ volume in PK-Sim ([Edginton et al., 2006](# 6. References)). 
+Maturation changes of physiological parameters were evaluated for each year of life from birth to 30 years of age. Data was obtained and handled as described in 3.2.3. Since literature data do not consider vascular and parts of the interstitial spaces for each organ and tissue, respective fractions were added. These fractions summarize the difference between an ICRP-reported organ volume without blood and an *in silico* organ volume in PK-Sim ([Edginton et al., 2006](#6-references)). 
 
 The processed organ masses were summed up and found to reach 91-95 % of the body weight; the gap accounts for smaller organs not captured in this model, for example the adrenal glands, thyroid, tongue and prostate. In order to reach the final body weights, muscle and fat mass was increased in proportion to this gap.
 
-Age-related changes in organ blood flow rates were accounted for as changes in cardiac output. Blood flow rates and cardiac output values were taken from the literature. The sum of all organ blood flows should be equal to the cardiac output. Thus, the unknown age-dependent organ blood flows were scaled with regard to their relative cardiac output contributions in adults as postulated by the ICRP report ([Valentin, 2002](# 6. References)) to match the age-related changes in cardiac output. In these cases, the ratio between organ blood flow rate and cardiac output remained the same over the age span. 
+Age-related changes in organ blood flow rates were accounted for as changes in cardiac output. Blood flow rates and cardiac output values were taken from the literature. The sum of all organ blood flows should be equal to the cardiac output. Thus, the unknown age-dependent organ blood flows were scaled with regard to their relative cardiac output contributions in adults as postulated by the ICRP report ([Valentin, 2002](#6-references)) to match the age-related changes in cardiac output. In these cases, the ratio between organ blood flow rate and cardiac output remained the same over the age span. 
 
 # 4. Results
 
@@ -109,7 +109,7 @@ Age-related changes in organ blood flow rates were accounted for as changes in c
 
 ### 4.1.1 Demographics
 
-Japanese adult individuals are on average slightly smaller and have approximately 15% to 20% smaller body weight than adult Europeans. A comparison of growth charts for Caucasian children based on the CDC database ([Kuczmarski, 2000](# 6. References)) with data for Japanese children ([Ogiu et al., 1997](# 6. References)) revealed that the difference in body weight starts above an age of 14 to 15 years. Below this age, the differences in anthropometry between Europeans and Japanese children are marginal. This is visualized in **Figure 5‑1**.
+Japanese adult individuals are on average slightly smaller and have approximately 15% to 20% smaller body weight than adult Europeans. A comparison of growth charts for Caucasian children based on the CDC database ([Kuczmarski, 2000](# 6.#6-referencesith data for Japanese children ([Ogiu et al., 1997](# 6. R#6-referencesealed that the difference in body weight starts above an age of 14 to 15 years. Below this age, the differences in anthropometry between Europeans and Japanese children are marginal. This is visualized in **Figure 5‑1**.
 
 
 
@@ -167,7 +167,7 @@ In this study, parameters relevant to a PBPK approach were gathered by a compreh
 
 
 
-# 6. References
+#6-references
 
 Agency IAE 1998. Compilation of Anatomical, Physiological and Metabolic Characteristics for a Reference Asian Man Volume 2: Country Reports.
 
