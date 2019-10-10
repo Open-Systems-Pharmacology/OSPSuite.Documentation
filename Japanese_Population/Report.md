@@ -24,7 +24,7 @@ First, a systemic literature search was carried out to collect relevant anatomic
 
 ![1565705246059](Images/Workflow.png)
 
-**Figure** **3‑1** Workflow of this study. 
+**Figure 3‑1** Workflow of this study. 
 
 
 
@@ -110,7 +110,6 @@ Age-related changes in organ blood flow rates were accounted for as changes in c
 ### 4.1.1 Demographics
 
 Japanese adult individuals are on average slightly smaller and have approximately 15% to 20% smaller body weight than adult Europeans. A comparison of growth charts for Caucasian children based on the CDC database ([Kuczmarski, 2000](#6-references)) with data for Japanese children ([Ogiu et al., 1997](#6-references)) revealed that the difference in body weight starts above an age of 14 to 15 years. Below this age, the differences in anthropometry between Europeans and Japanese children are marginal. This is visualized in **Figure 5‑1**.
-
 
 
 ![1565706718984](Images/GrowthChart.png)
