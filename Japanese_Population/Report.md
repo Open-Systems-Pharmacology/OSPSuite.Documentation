@@ -24,7 +24,7 @@ First, a systemic literature search was carried out to collect relevant anatomic
 
 ![1565705246059](Images/Workflow.png)
 
-**Figure** **3‑1** Workflow of this study**.** 
+**Figure** **3‑1** Workflow of this study. 
 
 
 
@@ -40,7 +40,7 @@ Studies identified in the literature search were included in a preliminary study
 
 Data extracted from the included study set were compiled in a Microsoft Excel 2010® spreadsheet and prepared for further analyses. An in-house developed tool of Bayer AG was used to extract data from plots and convert these into numerical values. For the sake of simplicity, the density of all organs was assumed to be 1 kg/dm³, unless weight and volume deviated from each other by more than 5%. In case the exact number of studied individuals was not reported it was arbitrarily set to one. 
 
-In most cases values were reported as a geometric mean (![](/Images/GeoMean.gif)) and geometric standard deviation (*SD*). In cases where the *µ* and *σ* define a lognormal distribution, the associated geometric mean value (![](/Images/LogMean.gif)) and geometric standard deviation (![](/Images/LogSigma.gif)) of the lognormal distribution were used as comparable parameters.
+In most cases values were reported as a geometric mean (![](Images/GeoMean.gif)) and geometric standard deviation (*SD*). In cases where the *µ* and *σ* define a lognormal distribution, the associated geometric mean value (![](Images/LogMean.gif)) and geometric standard deviation (![](Images/LogSigma.gif)) of the lognormal distribution were used as comparable parameters.
 
 ### 3.2.3 Included data
 
