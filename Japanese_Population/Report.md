@@ -40,7 +40,7 @@ Studies identified in the literature search were included in a preliminary study
 
 Data extracted from the included study set were compiled in a Microsoft Excel 2010® spreadsheet and prepared for further analyses. An in-house developed tool of Bayer AG was used to extract data from plots and convert these into numerical values. For the sake of simplicity, the density of all organs was assumed to be 1 kg/dm³, unless weight and volume deviated from each other by more than 5%. In case the exact number of studied individuals was not reported it was arbitrarily set to one. 
 
-In most cases values were reported as a geometric mean ($\bar{x}$) and geometric standard deviation (*SD*). In cases where the *µ* and *σ* define a lognormal distribution, the associated geometric mean value ($e^{\mu}$) and geometric standard deviation ($e^{\sigma}$) of the lognormal distribution were used as comparable parameters.
+In most cases values were reported as a geometric mean (![](/Images/GeoMean.gif)) and geometric standard deviation (*SD*). In cases where the *µ* and *σ* define a lognormal distribution, the associated geometric mean value (![](/Images/LogMean.gif)) and geometric standard deviation (![](/Images/LogSigma.gif)) of the lognormal distribution were used as comparable parameters.
 
 ### 3.2.3 Included data
 
@@ -109,7 +109,7 @@ Age-related changes in organ blood flow rates were accounted for as changes in c
 
 ### 4.1.1 Demographics
 
-Japanese adult individuals are on average slightly smaller and have approximately 15% to 20% smaller body weight than adult Europeans. A comparison of growth charts for Caucasian children based on the CDC database ([Kuczmarski, 2000](# 6.#6-referencesith data for Japanese children ([Ogiu et al., 1997](# 6. R#6-referencesealed that the difference in body weight starts above an age of 14 to 15 years. Below this age, the differences in anthropometry between Europeans and Japanese children are marginal. This is visualized in **Figure 5‑1**.
+Japanese adult individuals are on average slightly smaller and have approximately 15% to 20% smaller body weight than adult Europeans. A comparison of growth charts for Caucasian children based on the CDC database ([Kuczmarski, 2000](#6-references)) with data for Japanese children ([Ogiu et al., 1997](#6-references)) revealed that the difference in body weight starts above an age of 14 to 15 years. Below this age, the differences in anthropometry between Europeans and Japanese children are marginal. This is visualized in **Figure 5‑1**.
 
 
 
