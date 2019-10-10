@@ -1,4 +1,4 @@
-﻿# 1. Executive Summary
+# 1. Executive Summary
 
 Anatomical and physiological maturation from birth to 30 years of life were informed based on literature information and subsequently integrated into a whole-body PBPK approach. Thereby, a knowledge-driven PBPK population database for Japanese was successfully developed. This methodology enables an age-dependent description of concentration-time profiles from birth to 30 years of age.
 
